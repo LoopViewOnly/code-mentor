@@ -8,47 +8,47 @@ define([
     })
 
 
-    // level.addQuestion({
-    //     generator: function (q) {
-    //         let condition1 = random.intBetween(1, 7)
-    //         let condition2 = random.intBetween(4, 15)
-    //         let condition3 = random.intBetween(1, 9)
-    //         let condition4 = random.intBetween(1, 9)
-    //         if (condition1 === condition2) {
-    //             condition1 += 2
-    //         }
-    //         if (condition3 === condition4) {
-    //             condition3 += 2
-    //         }
-    //         let a = random.intBetween(1, 5)
-    //         let b = random.intBetween(1, 5)
-    //         let c = random.intBetween(1, 5)
-    //         let d = random.intBetween(1, 4)
-    //         if (b === a) {
-    //             b += 2
-    //         }
-    //         if (a === c) {
-    //             c += 2
-    //         }
-    //         if (b === c) {
-    //             c += 1
-    //         }
-    //         q.addCode({
-    //             javascript: 'let a = 0\nif (' + condition1 + ' < ' + condition2 + ') {\n\t' +
-    //                 'a = ' + a + '\n} else if (' + condition3 + ' < ' + condition4 + ') {\n\t' +
-    //                 'a = ' + b + '\n} else {\n\ta = ' + c + '\n}\na + ' + d,
-    //             python: 'if ' + condition1 + ' < ' + condition2 + ':\n\ta = ' + a + '\n' +
-    //                 'elif ' + condition3 + ' < ' + condition4 + ':\n\ta = ' + b + '\n' +
-    //                 'else:\n\ta = ' + c + '\n\na + ' + d,
-    //             csharp: 'int a = 0;\nif (' + condition1 + ' < ' + condition2 + ') {\n\t' +
-    //                 'a = ' + a + ';\n} else if (' + condition3 + ' < ' + condition4 + ') {\n\t' +
-    //                 'a = ' + b + ';\n} else {\n\ta = ' + c + ';\n}\na + ' + d,
-    //         }, level.language)
+    level.addQuestion({
+        generator: function (q) {
+            let condition1 = random.intBetween(1, 7)
+            let condition2 = random.intBetween(4, 15)
+            let condition3 = random.intBetween(1, 9)
+            let condition4 = random.intBetween(1, 9)
+            if (condition1 === condition2) {
+                condition1 += 2
+            }
+            if (condition3 === condition4) {
+                condition3 += 2
+            }
+            let a = random.intBetween(1, 5)
+            let b = random.intBetween(1, 5)
+            let c = random.intBetween(1, 5)
+            let d = random.intBetween(1, 4)
+            if (b === a) {
+                b += 2
+            }
+            if (a === c) {
+                c += 2
+            }
+            if (b === c) {
+                c += 1
+            }
+            q.addCode({
+                javascript: 'let a = 0\nif (' + condition1 + ' < ' + condition2 + ') {\n\t' +
+                    'a = ' + a + '\n} else if (' + condition3 + ' < ' + condition4 + ') {\n\t' +
+                    'a = ' + b + '\n} else {\n\ta = ' + c + '\n}\na + ' + d,
+                python: 'if ' + condition1 + ' < ' + condition2 + ':\n\ta = ' + a + '\n' +
+                    'elif ' + condition3 + ' < ' + condition4 + ':\n\ta = ' + b + '\n' +
+                    'else:\n\ta = ' + c + '\n\na + ' + d,
+                csharp: 'int a = 0;\nif (' + condition1 + ' < ' + condition2 + ') {\n\t' +
+                    'a = ' + a + ';\n} else if (' + condition3 + ' < ' + condition4 + ') {\n\t' +
+                    'a = ' + b + ';\n} else {\n\ta = ' + c + ';\n}\na + ' + d,
+            }, level.language)
 
-    //         q.addBadChoices(a, b, c, d, a + d, b + d, c + d)
-    //     },
-    //     times: 3
-    // })
+            q.addBadChoices(a, b, c, d, a + d, b + d, c + d)
+        },
+        times: 3
+    })
 
     level.addQuestion({
         generator: function (q) {
