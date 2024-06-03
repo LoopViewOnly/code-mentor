@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zxx" xml:lang='zxx'>
+<head>
+    <title>Code Mentor</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" type="img/png" href="./icons/loop_logo.png" />
+</head>
+
+<body>
+
+    <div id="left" class="blur_on_menu">
+        <img id="logo" src="./img/title.jpg" alt="">
+    </div>
+
+    <div id="main" class="blur_on_menu">
+        <div id="level_name"></div>
+        <div id="dev_help"></div>
+        <div id="challenges_container">
+        </div>
+        <div id="antichamber"></div>
+    </div>
+
+    <div id="show_menu" class="blur_on_menu"></div>
+    <div id="footer">
+        <img src="./icons/looplogo.png" alt="Loop" width="110" />
+        <button class="reset">
+            <img class="icon-trash" src="./icons/trash.png" >
+        </button>
+    </div>
+
+
+    <div id="mask"></div>
+    <div id="levels">
+        <div class="end">
+            <h1><span class="title">THE END !</span></h1>
+        </div>
+    </div>
+
+    <img id="logo_python" src="img/python_alt.png" alt="Python" />
+    <img id="logo_csharp" src="img/csharp_alt.png" alt="Csharp" />
+    <img id="logo_javascript" src="img/javascript_alt.png" alt="JavaScript" />
+
+    <div id="welcome">
+    </div>
+
+    <div lang="en-US" id="modal_confirm_reset">
+        <div class="modal_content">
+            <div data-translation="are_you_sure" class="confirmation">
+            Are you sure ?
+            </div>
+            <button class="close_reset" data-translation="cancel">
+            Cancel
+            </button>
+            <button class="confirm_reset" data-translation="reset">
+            Reset
+            </button>
+        </div>
+    </div>
+
+
+    <div id="templates">
+
+        <div id="challenge_template">
+            <div class="challenge current">
+                <div class="left_arrow"></div>
+            </div>
+        </div>
+
+        <div id="answer_template">
+            <div class="answer">
+                <div class="interro">?</div>
+                <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                <div class="button"></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div id="correction_template">
+            <div class="user_answer_and_correction">
+                <span class="user_answer"></span>
+                <img class="arrow" src="./icons/arrowfalse.png" alt="answer" />
+                <span class="correct_answer"></span>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    
+<script src="scripts/main.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-19414637-7', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>

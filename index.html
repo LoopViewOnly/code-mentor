@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Mentor</title>
+<link rel="icon" type="img/png" href="./icons/loop_logo.png" />
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #222558;
+    }
+
+    .title {
+        font-size: 30px;
+        margin-bottom: 40px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .logo-container {
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .logo-container img {
+        width: 150px;
+        height: auto;
+    }
+
+    .logo-container:hover img {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+
+    .logo-bottom-left {
+        position: fixed;
+        bottom: 40px;
+        left: 40px;
+    }
+</style>
+</head>
+<body>
+    <div class="title">Choose a Programming Language:</div>
+    <div class="logo-container" onclick="redirectTo('/code-mentor/start.html?theme=basic_js')">
+        <img src="img/javascript_alt.png" alt="JavaScript Logo">
+    </div>
+    <div class="logo-container" onclick="redirectTo('/code-mentor/start.html?theme=basic_python')">
+        <img src="img/python_alt.png" alt="Python Logo">
+    </div>
+    <div class="logo-container"  onclick="redirectTo('/code-mentor/start.html?theme=basic_csharp')">
+        <img src="img/csharp_alt.png" style="width: 115px;" alt="Python Logo">
+    </div>
+    <div class="logo-bottom-left">
+        <img width="110px" src="icons/looplogo.png" alt="Loop">
+    </div>
+    
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
